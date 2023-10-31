@@ -1,0 +1,10 @@
+C:\Users\Pc Gustavo\source\repos\gorjeta\bin\Debug\gorjeta.exe.config
+C:\Users\Pc Gustavo\source\repos\gorjeta\bin\Debug\gorjeta.exe
+C:\Users\Pc Gustavo\source\repos\gorjeta\bin\Debug\gorjeta.pdb
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.csproj.AssemblyReference.cache
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.Properties.Resources.resources
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.csproj.GenerateResource.cache
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.csproj.CoreCompileInputs.cache
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.exe
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.pdb
+C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.FrmCalGorjeta.resources
