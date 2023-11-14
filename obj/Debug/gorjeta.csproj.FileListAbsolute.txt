@@ -8,3 +8,37 @@ C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.csproj.CoreCompileInp
 C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.exe
 C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.pdb
 C:\Users\Pc Gustavo\source\repos\gorjeta\obj\Debug\gorjeta.FrmCalGorjeta.resources
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\gorjeta.exe.config
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\gorjeta.exe
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\gorjeta.pdb
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.csproj.AssemblyReference.cache
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.FrmCalGorjeta.resources
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.Properties.Resources.resources
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.csproj.GenerateResource.cache
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.csproj.CoreCompileInputs.cache
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.exe
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.pdb
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\Google.Protobuf.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\MySql.Data.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Buffers.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Memory.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\ZstdNet.dll
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\Google.Protobuf.pdb
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\Google.Protobuf.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\MySql.Data.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Buffers.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Memory.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.FrmFuncionarios.resources
+C:\Users\mateus.smartins\Source\Repos\Gorjeta\obj\Debug\gorjeta.csproj.CopyComplete

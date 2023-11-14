@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace gorjeta
 {
@@ -21,65 +22,101 @@ namespace gorjeta
             comboBox1.Items.Add("ruim-2%");
         }
 
-        private double QualidadeDoServiço(string qualidadeDoServico)
+        private void calcularGorjeta(int porcentagem)
         {
-            switch (qualidadeDoServico)
+
+                double num1, num2, res;
+
+
+                num1 = Convert.ToDouble(txtValorDaConta.Text);
+                num2 = porcentagem / 100 * num1;
+
+
+                res = num1 + num2;
+
+
+            txtValorDaGorjeta.Text = num2.ToString();
+            txtTotal.Text = res.ToString();
+            
+            
+            
+
+            
+     
+
+
+        }
+        private void btnCalcularGorjeta_Click(object sender, EventArgs e)
+        {
+            
+            switch (comboBox1.Text)
             {
                 case "excelente-10%":
-                    return 10;
+                    calcularGorjeta(10);
+                    break;
+
                 case "ótimo-8%":
-                    return 8;
+                    calcularGorjeta(8);
+                    break;
+                    
+
                 case "bom-5%":
-                    return 5;
+                    calcularGorjeta(5);
+                    break;
+
                 case "ruim-2%":
-                    return 2;
+                    calcularGorjeta(2);
+                    break;
+
                 default:
-                    return 0;
+                    break ;
             }
+
         }
+
+        private void ltbUsado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlCommand comm = new MySqlCommand();
+
+            comm.CommandText = "select * from tbFuncionarios where nome = @nome;";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("nome",MySqlDbType.VarChar,100).Value = "@nome;";
+
+            comm.Connection = Conectar.obterConexao();
+
+            MySqlDataReader DR;
+
+            DR = comm.ExecuteReader();
+           
+
+            Conectar.fecharConexao();
+
+
+
+
+
+
 
 
 
         
-        private void btnCalcularGorjeta_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
 
 
-
-
-
-                double num1, num2, res;
-
-                num1 = Convert.ToInt32(txtValorDaConta.Text);
-                num2 = Convert.ToInt32(txtValorDaGorjeta.Text);
-               
-
-                res = num1 * num2 / 100;
-                txtTotal.Text = res.ToString();
-
-
-
-
-
-
-            }
-            catch (Exception )
-            {
-                MessageBox.Show("erro");
-            }
         }
+    }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
+
+
+
+
+     
     }
             
             
           
-        }
+        
  
         
     

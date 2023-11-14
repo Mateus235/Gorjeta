@@ -29,6 +29,7 @@ namespace gorjeta
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalGorjeta));
             this.gpbCalculandoGorjeta = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnCalcularGorjeta = new System.Windows.Forms.Button();
@@ -40,11 +41,17 @@ namespace gorjeta
             this.lblQualidadeDoServiço = new System.Windows.Forms.Label();
             this.lblValorDaConta = new System.Windows.Forms.Label();
             this.lblCalcularGorjeta = new System.Windows.Forms.Label();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.ltbUsado = new System.Windows.Forms.ListBox();
             this.gpbCalculandoGorjeta.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpbCalculandoGorjeta
             // 
+            this.gpbCalculandoGorjeta.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.gpbCalculandoGorjeta.Controls.Add(this.comboBox1);
             this.gpbCalculandoGorjeta.Controls.Add(this.btnCalcularGorjeta);
             this.gpbCalculandoGorjeta.Controls.Add(this.txtTotal);
@@ -55,7 +62,7 @@ namespace gorjeta
             this.gpbCalculandoGorjeta.Controls.Add(this.lblQualidadeDoServiço);
             this.gpbCalculandoGorjeta.Controls.Add(this.lblValorDaConta);
             this.gpbCalculandoGorjeta.Controls.Add(this.lblCalcularGorjeta);
-            this.gpbCalculandoGorjeta.Location = new System.Drawing.Point(179, 81);
+            this.gpbCalculandoGorjeta.Location = new System.Drawing.Point(179, 40);
             this.gpbCalculandoGorjeta.Name = "gpbCalculandoGorjeta";
             this.gpbCalculandoGorjeta.Size = new System.Drawing.Size(320, 360);
             this.gpbCalculandoGorjeta.TabIndex = 0;
@@ -69,7 +76,6 @@ namespace gorjeta
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(281, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnCalcularGorjeta
             // 
@@ -81,7 +87,7 @@ namespace gorjeta
             this.btnCalcularGorjeta.TabIndex = 2;
             this.btnCalcularGorjeta.Text = "Calcular Gorjeta";
             this.btnCalcularGorjeta.UseVisualStyleBackColor = false;
-            this.btnCalcularGorjeta.Click += new System.EventHandler(this.btnCalcularGorjeta_Click_1);
+            this.btnCalcularGorjeta.Click += new System.EventHandler(this.btnCalcularGorjeta_Click);
             // 
             // txtTotal
             // 
@@ -96,7 +102,6 @@ namespace gorjeta
             this.txtValorDaConta.Name = "txtValorDaConta";
             this.txtValorDaConta.Size = new System.Drawing.Size(283, 20);
             this.txtValorDaConta.TabIndex = 0;
-            this.txtValorDaConta.Text = "RS:";
             // 
             // txtValorDaGorjeta
             // 
@@ -157,11 +162,73 @@ namespace gorjeta
             this.lblCalcularGorjeta.TabIndex = 0;
             this.lblCalcularGorjeta.Text = "Calculadora de gorjeta";
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(289, 406);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(104, 31);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
+            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisar.Location = new System.Drawing.Point(179, 406);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(104, 31);
+            this.btnPesquisar.TabIndex = 4;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
+            this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpar.Location = new System.Drawing.Point(399, 406);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(97, 31);
+            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            // 
+            // btnSair
+            // 
+            this.btnSair.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.Location = new System.Drawing.Point(632, 458);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(151, 105);
+            this.btnSair.TabIndex = 6;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
+            // 
+            // ltbUsado
+            // 
+            this.ltbUsado.FormattingEnabled = true;
+            this.ltbUsado.Location = new System.Drawing.Point(-1, 442);
+            this.ltbUsado.Name = "ltbUsado";
+            this.ltbUsado.Size = new System.Drawing.Size(242, 121);
+            this.ltbUsado.TabIndex = 7;
+            this.ltbUsado.SelectedIndexChanged += new System.EventHandler(this.ltbUsado_SelectedIndexChanged);
+            // 
             // FrmCalGorjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.ltbUsado);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.gpbCalculandoGorjeta);
             this.Name = "FrmCalGorjeta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -185,6 +252,11 @@ namespace gorjeta
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtValorDaConta;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ListBox ltbUsado;
     }
 }
 
